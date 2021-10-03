@@ -11,7 +11,6 @@ config  dags  data  docker-compose.yaml  ldap  logs  plugins
 webserver_config.py
 
 ./dags:
-enterprise_dag.py  marketing_dag.py
 
 ./data:
 ./data/certificates:
@@ -21,13 +20,14 @@ airsoft.com.ca.crt  airsoft.crt  airsoft.key
 ./data/slapd/database:
 
 ./ldap:
-bootstrap.ldif
 
 ./logs:
 
 ./plugins:
 ```
 #### Start the container
+copy the files from `sample_dags` into `dags` directory
+copy the `bootstrap.ldif` into `ldap` directory
 Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
 ```bash
 docker-compose up -d
@@ -41,10 +41,10 @@ docker-compose up -d
 
 #### Login to Airflow
 1. Go to `localhost:8080` in your browser
-2. Login using `hswayampakula` as username and `harish` as password
+2. Login using `aadmin` as username and `airflow` as password
 
 #### Configure John Doe enterprise user
-1. Login to airflow as hswayampakula (admin user)
+1. Login to airflow as aadmin (admin user)
 2. Click on Security >> List Roles
 3. Copy "User" role to "Enterprise" (select User role and click on Actions>>Copy Role, edit the newly created UserCopy)
 4. Edit Enterprise role and 
