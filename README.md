@@ -26,13 +26,14 @@ airsoft.com.ca.crt  airsoft.crt  airsoft.key
 ./plugins:
 ```
 #### Start the container
-copy the files from `sample_dags` into `dags` directory
-copy the `bootstrap.ldif` into `ldap` directory
-Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
+1. copy the files from `sample_dags` into `dags` directory
+2. copy the `bootstrap.ldif` into `ldap` directory
+3. Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
 ```bash
 docker-compose up -d
 ```
-***Make sure the directories `./data/slapd` and `./logs` have extended write permissions***
+* ignore `-d` option if you want to see realtime logs
+* ***Make sure the directories `./data/slapd` and `./logs` have extended write permissions***
 
 #### Configure OpenLDAP
 1. Go to `localhost:8081` in your browser to open LdapAdmin
