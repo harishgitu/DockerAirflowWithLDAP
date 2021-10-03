@@ -19,8 +19,6 @@ airsoft.com.ca.crt  airsoft.crt  airsoft.key
 ./data/slapd/config:
 ./data/slapd/database:
 
-./ldap:
-
 ./logs:
 
 ./plugins:
