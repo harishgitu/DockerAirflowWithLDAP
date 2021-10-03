@@ -1,11 +1,10 @@
 ### Setup
 
-Unzip the file into airflow_with_ldap folder on wsl2
+Unzip airflow_with_ldap.zip into airflow_with_ldap directory
 
 you will get below files and folders
 ```bash
-.:
-config  dags  data  docker-compose.yaml  ldap  logs  plugins
+config  dags  data  docker-compose.yaml  logs  plugins
 
 ./config:
 webserver_config.py
@@ -24,7 +23,7 @@ airsoft.com.ca.crt  airsoft.crt  airsoft.key
 ./plugins:
 ```
 #### Start the container
-1. copy the files from `sample_dags` into `dags` directory
+1. copy py files from `sample_dags` into `dags` directory
 3. Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
 ```bash
 docker-compose up -d
