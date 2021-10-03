@@ -27,7 +27,6 @@ airsoft.com.ca.crt  airsoft.crt  airsoft.key
 ```
 #### Start the container
 1. copy the files from `sample_dags` into `dags` directory
-2. copy the `bootstrap.ldif` into `ldap` directory
 3. Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
 ```bash
 docker-compose up -d
@@ -38,7 +37,7 @@ docker-compose up -d
 #### Configure OpenLDAP
 1. Go to `localhost:8081` in your browser to open LdapAdmin
 2. Login using `cn=admin,dc=airsoft,dc=com` as username and `admin` as password
-3. Click on `import` option and select the `bootstrap.ldif` file from `/ldap` folder
+3. Click on `import` option and select the `bootstrap.ldif` file
 
 #### Login to Airflow
 1. Go to `localhost:8080` in your browser
