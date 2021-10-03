@@ -52,3 +52,7 @@ docker-compose up -d
   - Add `can edit on DAG:ent_dag` and `can read on DAG:ent_dag`
 5. Logout of admin user and login using `jdoe` and `john`
 
+##### Additional Reading
+- [Mark Lamberti Blog](https://www.notion.so/Airflow-with-LDAP-in-10-mins-cbcbe5690d3648f48ee7e8ca45cb755f#26bcef44783e40efa49aa2aca5b45716)
+- [osixia/docker-openldap](https://github.com/osixia/docker-openldap)
+- [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
