@@ -1,5 +1,24 @@
 
 #### Start the container
+**Make sure following directories are present**
+```bash
+./config:
+webserver_config.py
+
+./dags:
+
+
+./data:
+./data/certificates:
+airsoft.com.ca.crt  airsoft.crt  airsoft.key
+./data/slapd:
+./data/slapd/config:
+./data/slapd/database:
+
+./logs:
+
+./plugins:
+```
 Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
 ```bash
 docker-compose up -d
