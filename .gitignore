@@ -1,0 +1,5 @@
+data/slapd/config/*
+data/slapd/database/*
+logs/*
+data/certificates/*.pem
+data/certificates/airsoft.key
