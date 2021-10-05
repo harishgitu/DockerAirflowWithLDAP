@@ -1,30 +1,6 @@
-### Setup
 
-Unzip airflow_with_ldap.zip into airflow_with_ldap directory
-
-you will get below files and folders
-```bash
-config  dags  data  docker-compose.yaml  logs  plugins
-
-./config:
-webserver_config.py
-
-./dags:
-
-./data:
-./data/certificates:
-airsoft.com.ca.crt  airsoft.crt  airsoft.key
-./data/slapd:
-./data/slapd/config:
-./data/slapd/database:
-
-./logs:
-
-./plugins:
-```
 #### Start the container
-1. copy py files from `sample_dags` into `dags` directory
-3. Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
+Stay in the airflow_with_ldap folder (where `docker-compose.yaml` file is located) and run
 ```bash
 docker-compose up -d
 ```
